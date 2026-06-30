@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt · SmartNovo</title>
+<meta name="description" content="Umów pilotaż lub zostań partnerem. Powiedz nam, gdzie i pod jaką marką, a pokażemy jednostkę handlującą w tygodnie.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="led-topbar"><div class="led-strip"></div></div>
+
+<header class="site-header solid" id="siteHeader">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="SmartNovo — strona główna"><span class="w">Smart<em>Novo</em></span></a>
+    <nav aria-label="Główna">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="product.html">Produkt i technologia</a></li>
+        <li><a href="partners.html">Partnerzy</a></li>
+        <li><a href="contact.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang-switch"><a href="../contact.html">EN</a><span class="sep">/</span><a href="contact.html" class="active">PL</a></div>
+      <a class="btn btn--primary" href="contact.html">Umów pilotaż <span class="arr">→</span></a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section dark dot-edge contact-hero" style="padding-block:calc(var(--s8) + 40px) var(--s6); background-image:url(../assets/img/store-street-night.png); background-size:cover; background-position:center">
+  <div class="wrap reveal in" style="position:relative;z-index:2">
+    <span class="eyebrow">Kontakt</span>
+    <h1 style="font-size:var(--fs-h1);max-width:18ch;margin-top:var(--s2)">Postawmy jednostkę u Ciebie.</h1>
+    <p class="lead" style="margin-top:var(--s3)">Powiedz nam, gdzie i pod jaką marką. Wrócimy z planem uruchomienia jednostki, zwykle w tygodnie, nie kwartały.</p>
+  </div>
+</section>
+<section class="section white" id="form">
+  <div class="wrap contact reveal">
+    <div>
+      <!-- Formularz demonstracyjny. Podłącz do swojego handlera (Formspree / backend) przez atrybut action. -->
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Imię i nazwisko</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="Twoje imię i nazwisko">
+        </div>
+        <div class="field">
+          <label for="company">Firma / marka</label>
+          <input id="company" name="company" type="text" autocomplete="organization" placeholder="np. sieć handlowa, pojedynczy sklep, nieruchomości">
+        </div>
+        <div class="field">
+          <label for="email">Służbowy e-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="ty@firma.pl">
+        </div>
+        <div class="field">
+          <label for="interest">Interesuje mnie</label>
+          <select id="interest" name="interest">
+            <option>Wdrożenie jednostki (pilotaż)</option>
+            <option>Licencja modułu wizji na istniejących kamerach</option>
+            <option>Zostanie partnerem</option>
+            <option>Coś innego</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Lokalizacja i marka</label>
+          <textarea id="message" name="message" rows="4" placeholder="Gdzie stanęłaby jednostka i pod jaką marką?"></textarea>
+        </div>
+        <button class="btn btn--primary btn--lg" type="submit">Wyślij zapytanie <span class="arr">→</span></button>
+        <p id="formNote" role="status" style="margin-top:var(--s2); font-size:var(--fs-sm); color:var(--muted)"></p>
+      </form>
+    </div>
+
+    <aside class="contact-aside">
+      <dl>
+        <div>
+          <dt>Wdróż z nami</dt>
+          <dd>Pełna autonomiczna jednostka na Twojej działce, pod Twoją marką, wyposażona, podłączona i handlująca.</dd>
+        </div>
+        <div>
+          <dt>Licencjonuj wizję</dt>
+          <dd>Uruchom wykrywanie kradzieży i upadków na kamerach, które już masz, bez kontenera.</dd>
+        </div>
+        <div>
+          <dt>Gdzie jesteśmy</dt>
+          <dd>Warszawa, Polska 🇵🇱<br>Zbudowane w Polsce dla UE.</dd>
+        </div>
+        <div>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:hello@smartnovo.eu" style="color:var(--teal-dim); font-weight:600">hello@smartnovo.eu</a></dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer dot-edge">
+  <div class="wrap reveal">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="index.html"><span class="w">Smart<em>Novo</em></span></a>
+        <p>Autonomiczna platforma sklepów kontenerowych. Zbudowane w Polsce dla UE.</p>
+      </div>
+      <div class="foot-col"><h4>Platforma</h4><ul>
+        <li><a href="product.html">Produkt i technologia</a></li>
+        <li><a href="product.html#cv">Wykrywanie kradzieży i upadków</a></li>
+        <li><a href="product.html#privacy">Prywatność w projekcie</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Firma</h4><ul>
+        <li><a href="partners.html">Partnerzy</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="contact.html">Umów pilotaż</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Zgodność</h4><ul>
+        <li><a href="product.html#privacy">RODO i EU AI Act</a></li>
+        <li><a href="product.html#privacy">Wizja bez tożsamości</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 SmartNovo. Wszelkie prawa zastrzeżone.</span>
+      <span>Warszawa, Polska 🇵🇱 · Zbudowane dla UE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  var f = document.getElementById('contactForm');
+  if (f) f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var note = document.getElementById('formNote');
+    var email = document.getElementById('email');
+    var name = document.getElementById('name');
+    if (!name.value.trim() || !email.value.trim() || !/.+@.+\..+/.test(email.value)) {
+      note.textContent = 'Podaj imię i nazwisko oraz prawidłowy adres e-mail.';
+      note.style.color = '#c2453a'; return;
+    }
+    note.textContent = 'Dziękujemy. To jest formularz demonstracyjny. Podłącz go do swojego systemu, aby odbierać zapytania.';
+    note.style.color = 'var(--teal-dim)';
+    f.reset();
+  });
+</script>
+</body>
+</html>
