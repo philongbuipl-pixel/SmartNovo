@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmartNovo · The store that runs itself</title>
-<meta name="description" content="SmartNovo is an autonomous container store platform. One AI runs entry, security, inventory and checkout with no staff, and it relocates in an hour. Built in Poland for the EU.">
+<title>SmartNovo · The store run by AI</title>
+<meta name="description" content="SmartNovo builds autonomous store technology. One AI is the manager, cashier, guard and marketing team of a 21 m² store that relocates in under an hour. Built in Poland for the EU.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
 <header class="site-header" id="siteHeader">
   <div class="wrap nav">
     <a class="brand" href="index.html" aria-label="SmartNovo home">
-      <span class="w">Smart<em>Novo</em></span>
+      <img class="logo logo--ink" src="assets/img/logo/wordmark-ink.png" alt="SmartNovo">
+      <img class="logo logo--white" src="assets/img/logo/wordmark-white.png" alt="SmartNovo">
     </a>
     <nav aria-label="Primary">
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="product.html">Product &amp; Technology</a></li>
+        <li><a href="product.html">Technology</a></li>
         <li><a href="partners.html">Partners</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -42,16 +43,15 @@
 <!-- HERO: students entering UNI STORE, daylight shifting -->
 <section class="hero">
   <video class="hero__video" autoplay muted loop playsinline
-         poster="assets/img/poster-cv-eye.jpg" preload="metadata">
-    <source src="assets/video/cv-eye.mp4" type="video/mp4">
+         poster="assets/img/unit-render.jpg" preload="metadata" data-mobile-src="assets/video/hero-main-720.mp4">
+    <source src="assets/video/hero-main.mp4" type="video/mp4">
   </video>
   <div class="hero__scrim"></div>
   <span class="hero__dots" aria-hidden="true"></span>
   <div class="wrap hero__inner">
-    <span class="eyebrow">Autonomous store platform</span>
-    <h1><span class="word">The</span> <span class="word">store</span> <span class="word">that</span> <span class="word">runs</span> <span class="word">itself<span style="color:var(--teal)">.</span></span></h1>
-    <p class="lead">One AI runs entry, security, inventory and checkout. No staff. A 21&nbsp;m² unit,
-       craned onto site and trading in under an hour, under any brand.</p>
+    <h1><span class="word">The</span> <span class="word">store</span> <span class="word">run</span> <span class="word">by</span> <span class="word">AI<span style="color:var(--teal)">.</span></span></h1>
+    <p class="lead">One AI is the manager, the cashier, the guard and the marketing team. Customers scan,
+       shop and walk out. A 21&nbsp;m² store, craned onto site and trading in under an hour, under any brand.</p>
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="contact.html">Deploy with us <span class="arr">→</span></a>
       <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
@@ -64,7 +64,7 @@
   <div class="wrap whynow__grid">
     <div class="reveal">
       <span class="eyebrow">Why now</span>
-      <h2 style="font-size:var(--fs-h1); max-width:14ch">The staffed store stopped adding up.</h2>
+      <h2 style="font-size:clamp(2.1rem,4.2vw,3.4rem)">The staffed store <br>stopped adding up.</h2>
       <p class="lead" style="margin-top:var(--s3)">Thousands of forecourts, campuses, hospital sites and small towns have
          real demand. But a clerk on every shift sinks the numbers before the first basket is scanned, so SmartNovo removes the
          line items that break the model.</p>
@@ -76,12 +76,12 @@
         <div class="whynow__card"><div class="big"><span data-count="2" data-suffix="%">2%</span></div>
           <div><h3>Theft keeps climbing</h3><p>Shrinkage runs 1.5 to 2% of European retail sales, and small stores rarely have real-time loss prevention.</p></div></div>
         <div class="whynow__card"><div class="big"><span data-count="6" data-suffix=" mo">6 mo</span></div>
-          <div><h3>Slow, costly to open</h3><p>A conventional fit-out means a lease, a build-out and consent. That is months and six figures before you trade.</p></div></div>
+          <div><h3>Slow to open, expensive to leave</h3><p>A conventional fit-out means a lease, a build-out and consent: months and six figures before you trade. And it is all sunk into the venue. If the location stops working, the owner walks away and the fit-out stays behind.</p></div></div>
       </div>
     </div>
     <div class="whynow__media float-media" style="background-image:url(assets/img/store-crane-delivery.jpg)">
       <video autoplay muted loop playsinline data-play-in-view data-clip-start="0" data-clip-end="3"
-             poster="assets/img/store-crane-delivery.jpg" preload="auto">
+             poster="assets/img/store-crane-delivery.jpg" preload="metadata">
         <source src="assets/video/crane-lift.mp4" type="video/mp4">
       </video>
     </div>
@@ -95,16 +95,18 @@
       <div>
         <span class="eyebrow">One brain, one unit</span>
         <h2 style="font-size:var(--fs-h1)">One AI runs the whole store.</h2>
-        <p class="lead">The same computer-vision system that stops theft also tracks inventory, opens the doors,
-           registers customers and detects falls. One brain, a 21&nbsp;m² unit, and no staff. It is craned onto site and
-           trading in under an hour.</p>
+        <p class="lead">It is the store manager, the cashier, the security guard and the marketing team in a single
+           system. It opens the doors, tracks every product in real time, flags theft, responds to falls and decides
+           which promotions to run. When stock runs low, it places the order and dispatches a human assistant to
+           restock exactly what it asks for.</p>
+        <p class="lead" style="margin-top:var(--s3); color:var(--paper)">Humans don't run this store. They work for it.</p>
         <div class="hero__cta" style="margin-top:var(--s4)">
           <a class="btn btn--primary" href="product.html">Explore the technology <span class="arr">→</span></a>
         </div>
       </div>
       <div class="split__media float-media">
-        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="auto">
-          <source src="assets/video/diagram-anim.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="metadata" data-mobile-src="assets/video/schematics-720.mp4">
+          <source src="assets/video/schematics.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -123,13 +125,26 @@
         <span class="k">Safety</span><h3>Fall detection</h3><p>Recognises a person down and pushes a medical alert, so there is safety cover with no staff.</p></div>
       <div class="node lift">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
-        <span class="k">Stock</span><h3>Live inventory</h3><p>Vision-driven stock levels, restock prompts and shrinkage signals.</p></div>
+        <span class="k">Stock</span><h3>Inventory &amp; ordering</h3><p>The AI tracks every product in real time and places the order before shelves run empty.</p></div>
       <div class="node lift">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></span>
         <span class="k">Checkout</span><h3>Scan &amp; pay</h3><p>Self-checkout POS with card &amp; BLIK. The unit reconciles itself.</p></div>
       <div class="node lift">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.2"/><rect x="14" y="3" width="7" height="5" rx="1.2"/><rect x="14" y="12" width="7" height="9" rx="1.2"/><rect x="3" y="16" width="7" height="5" rx="1.2"/></svg></span>
-        <span class="k">Fleet</span><h3>One dashboard</h3><p>Inventory, sales, alerts and the whole fleet in a single view.</p></div>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 0 1-5.8-1.6"/><path d="M17 8.5a4 4 0 0 1 0 5"/></svg></span>
+        <span class="k">Marketing</span><h3>Promotions, picked by AI</h3><p>The AI decides which offers to run and when, and pushes them to the in-store screens.</p></div>
+    </div>
+
+    <div class="ai-facts reveal-stagger">
+      <div class="f"><b>1 person, 5 stores</b><span>A single assistant services five containers. The AI tells them what to bring and where.</span></div>
+      <div class="f"><b>One dashboard</b><span>Sales, stock levels, best sellers and what to order for each unit, in a single AI view.</span></div>
+      <div class="f"><b>Moves in under an hour</b><span>The whole store loads onto a small truck, stock still on the shelves, and reopens somewhere busier.</span></div>
+      <div class="f"><b>Runs anywhere</b><span>Optional solar power and Starlink internet, so remote sites are no obstacle.</span></div>
+    </div>
+
+    <div class="team-photo float-media reveal" style="margin-top:var(--s5)">
+      <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="metadata" style="width:100%; display:block" data-mobile-src="assets/video/ai-thinking-720.mp4">
+        <source src="assets/video/ai-thinking.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -140,7 +155,7 @@
     <div class="tech-intro reveal" style="margin-bottom:var(--s6)">
       <div>
         <span class="eyebrow">The technology</span>
-        <h2 style="font-size:var(--fs-h1)">Vision that reads movement, never faces.</h2>
+        <h2 style="font-size:var(--fs-h1)">AI-powered vision that reads movement.</h2>
       </div>
       <p class="lead">138-point skeletal tracking and behaviour recognition, built in-house over
          four years and running on commodity cameras at the edge.</p>
@@ -151,7 +166,7 @@
       <div class="cv-block__media float-media" style="background-image:url(assets/img/poster-theft-detection.jpg)">
         <span class="cv-block__tag"><span class="dot"></span> Live · theft detection</span>
         <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-theft-detection.jpg" preload="metadata">
-          <source src="assets/video/theft-detection.mp4" type="video/mp4">
+          <source src="assets/video/stealing.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -170,8 +185,8 @@
     <div class="cv-block cv-block--rev reveal" style="margin-top:var(--s8)">
       <div class="cv-block__media float-media" style="background-image:url(assets/img/poster-fall-detection.jpg)">
         <span class="cv-block__tag"><span class="dot"></span> Live · fall detection</span>
-        <video autoplay muted loop playsinline data-play-in-view data-clip-start="3" poster="assets/img/poster-fall-detection.jpg" preload="auto">
-          <source src="assets/video/fall-detection.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-fall-detection.jpg" preload="metadata">
+          <source src="assets/video/medical-alert.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -188,68 +203,50 @@
   </div>
 </section>
 
-<!-- TRACTION — real numbers from live units -->
-<section class="section traction reveal">
-  <div class="wrap">
-    <div class="tech-intro" style="margin-bottom:var(--s5)">
-      <div>
-        <span class="eyebrow">Traction</span>
-        <h2 style="font-size:var(--fs-h1)">Already trading. Not a concept.</h2>
-      </div>
-      <p class="lead">Lewiatan-branded units are live on Polish sites today. These are the first 90 days
-         across three units, with a signed order for five more from our anchor partner.</p>
-    </div>
-    <div class="metric-grid reveal-stagger">
-      <div class="metric"><div class="m-num">3</div><div class="m-lbl">units live and in testing</div></div>
-      <div class="metric"><div class="m-num">+5</div><div class="m-lbl">on a signed order from our anchor</div></div>
-      <div class="metric"><div class="m-num">~1,200</div><div class="m-lbl">registered customers in 90 days</div></div>
-      <div class="metric"><div class="m-num">~27k</div><div class="m-lbl">transactions processed</div></div>
-      <div class="metric"><div class="m-num">99%</div><div class="m-lbl">uptime over the first 90 days</div></div>
-      <div class="metric"><div class="m-num">PLN 1,800</div><div class="m-lbl">average revenue per unit, per day</div></div>
-      <div class="metric"><div class="m-num">PLN 18</div><div class="m-lbl">average basket</div></div>
-      <div class="metric"><div class="m-num">4 yrs</div><div class="m-lbl">of in-house R&amp;D behind the vision</div></div>
-    </div>
-    <p class="foot-note">Anchored by Lewiatan, with our CEO on the retailer's board, and protected by EU registered design&nbsp;#015135640.</p>
-  </div>
-</section>
-
 <!-- ANY BRAND, ANY SITE -->
 <section class="section">
   <div class="wrap reveal" style="text-align:center; margin-inline:auto">
     <span class="eyebrow" style="justify-content:center">One platform, any brand</span>
-    <h2 style="font-size:var(--fs-h1)">Your brand. Any site.<br>Dropped anywhere.</h2>
+    <h2 style="font-size:var(--fs-h1)">Your brand. Any site. <br>Dropped anywhere.</h2>
   </div>
   <div class="wrap reveal-stagger ind-grid" style="margin-top:var(--s5)">
     <article class="ind-card lift" style="min-height:340px">
       <img src="assets/img/store-hospital-day.png" alt="Lewiatan SmartNovo unit on a hospital campus">
-      <div class="body"><span class="k">Healthcare</span><h3>Hospital campuses</h3></div>
+      <div class="body"><span class="k">Office campuses</span><h3>Groceries</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-pharmacy.jpg" preload="metadata">
         <source src="assets/video/pharmacy.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Pharmacy</span><h3>PharmaNow</h3></div>
+      <div class="body"><span class="k">Hospitals &amp; clinics</span><h3>Pharmacy</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <img src="assets/img/store-beach-waveshop.jpg" alt="WaveShop seasonal unit on a boardwalk">
-      <div class="body"><span class="k">Beach &amp; resort</span><h3>WaveShop</h3></div>
+      <div class="body"><span class="k">Beach &amp; resort</span><h3>Swimwear &amp; sun care</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-entering-uni.jpg" preload="metadata">
         <source src="assets/video/entering-uni.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Campus</span><h3>Uni Store</h3></div>
+      <div class="body"><span class="k">University campus</span><h3>Clothing &amp; merch</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-hero-reststop.jpg" preload="metadata">
         <source src="assets/video/rest-stop.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Motorway</span><h3>Forecourts &amp; MOPs</h3></div>
+      <div class="body"><span class="k">Motorway &amp; forecourts</span><h3>24/7 convenience</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
-      <img src="assets/img/store-scan-enter.jpg" alt="Customer scanning to enter a SmartNovo convenience unit">
-      <div class="body"><span class="k">Convenience</span><h3>High street</h3></div>
+      <img src="assets/img/store-papermind.jpg" alt="PaperMind stationery unit outside a school">
+      <div class="body"><span class="k">Schools</span><h3>Books &amp; stationery</h3></div>
     </article>
   </div>
   <p class="lead reveal" style="text-align:center; margin:var(--s4) auto 0">Convenience, pharmacy, campus, forecourt or
      resort. The unit is the same, and the brand is yours.</p>
+  <div class="wrap reveal" style="margin-top:var(--s5)">
+    <div class="team-photo float-media">
+      <video autoplay muted loop playsinline data-play-in-view poster="assets/img/unit-render.jpg" preload="metadata" style="width:100%; display:block">
+        <source src="assets/video/brand-reel.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
 
 <!-- PARTNER MARQUEE -->
@@ -294,7 +291,15 @@
       </details>
       <details class="faq-item">
         <summary>Can it run under our own brand?</summary>
-        <div class="faq-a">Yes. The 21 m² unit is the same underneath; the brand on the outside is yours. Convenience, pharmacy, campus, forecourt or resort.</div>
+        <div class="faq-a">Yes. The 21 m² unit is the same underneath; the outside is fully customisable with your own design and wrap, and the in-store screens carry your promotions and ads. Convenience, pharmacy, campus, forecourt or resort.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How many people does it take to operate?</summary>
+        <div class="faq-a">One. A single assistant services up to five containers, and the AI dashboard tells them exactly what to bring and to which store. Everything else, from checkout to ordering, the AI handles itself.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What does a site need?</summary>
+        <div class="faq-a">Just land. The unit connects to grid power or runs on optional solar panels, internet comes via Starlink, and fridges and freezers run inside, so even remote locations work.</div>
       </details>
       <details class="faq-item">
         <summary>Can we license just the vision, without a container?</summary>
@@ -302,7 +307,7 @@
       </details>
       <details class="faq-item">
         <summary>Can a unit be moved later?</summary>
-        <div class="faq-a">Yes. A unit relocates to a new site in under an hour as demand shifts, so a slow location is never a stranded asset.</div>
+        <div class="faq-a">Yes. The steel unit weighs about 3.5 tonnes, so it loads onto a small truck and is road-legal, with the stock still on the shelves. If a location underperforms, the store reopens somewhere better in under an hour. You never lose the store.</div>
       </details>
     </div>
   </div>
@@ -328,11 +333,11 @@
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <a class="brand" href="index.html"><span class="w">Smart<em>Novo</em></span></a>
-        <p style="margin-top:var(--s2)">The autonomous container store platform. Built in Poland for the EU.</p>
+        <a class="brand" href="index.html"><img class="logo" src="assets/img/logo/wordmark-white.png" alt="SmartNovo"></a>
+        <p style="margin-top:var(--s2)">Autonomous store technology. Built in Poland for the EU.</p>
       </div>
       <div class="foot-col"><h4>Platform</h4><ul>
-        <li><a href="product.html">Product &amp; Technology</a></li>
+        <li><a href="product.html">Technology</a></li>
         <li><a href="product.html#cv">Theft &amp; fall detection</a></li>
         <li><a href="index.html#how">How it works</a></li>
       </ul></div>

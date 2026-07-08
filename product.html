@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product &amp; Technology · SmartNovo</title>
+<title>Technology · SmartNovo</title>
 <meta name="description" content="The SmartNovo unit, the AI brain and the computer-vision stack: 138-point skeletal tracking, theft and fall detection, identity-free and EU AI Act compliant by design.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,14 @@
 
 <header class="site-header solid" id="siteHeader">
   <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="SmartNovo home"><span class="w">Smart<em>Novo</em></span></a>
+    <a class="brand" href="index.html" aria-label="SmartNovo home">
+      <img class="logo logo--ink" src="assets/img/logo/wordmark-ink.png" alt="SmartNovo">
+      <img class="logo logo--white" src="assets/img/logo/wordmark-white.png" alt="SmartNovo">
+    </a>
     <nav aria-label="Primary">
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="product.html" aria-current="page">Product &amp; Technology</a></li>
+        <li><a href="product.html" aria-current="page">Technology</a></li>
         <li><a href="partners.html">Partners</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -36,12 +39,13 @@
 
 <main>
 
-<section class="page-head page-head--photo reveal in" style="background-image:url(assets/img/store-hospital-day.png); background-size:cover; background-position:center">
+<section class="page-head page-head--photo reveal in" style="background-image:url(assets/img/unit-render.jpg); background-size:cover; background-position:center">
   <div class="wrap">
-    <span class="eyebrow">Product &amp; technology</span>
+    <span class="eyebrow">Technology</span>
     <h1>A complete store, and the AI that runs it.</h1>
-    <p class="lead">Two things ship together: a fully-fitted 21&nbsp;m² retail unit, and four years of in-house computer
-       vision that handles everything a staffed store needs a team for.</p>
+    <p class="lead">Two things ship together: a fully-fitted 21&nbsp;m² retail unit, and an AI that does everything a
+       staffed store needs a team for. It sells, watches, orders and promotes, and when it needs hands, it calls
+       one human assistant.</p>
   </div>
 </section>
 
@@ -57,13 +61,27 @@
       <span class="eyebrow">The unit</span>
       <h2>Fully-fitted. Movable. Permit-light.</h2>
       <p class="lead">Legally classed as a vending machine, the 21&nbsp;m² unit drops onto a site and trades in under an
-         hour, with no lease, no build-out and no six-month consent process.</p>
+         hour. No lease, no build-out, no six-month consent process. All it needs is land.</p>
       <ol class="steps">
-        <li><div><h3>App &amp; QR entry</h3><p>Unlock the door with the app or a QR code.</p></div></li>
+        <li><div><h3>App &amp; QR entry</h3><p>The AI unlocks the door for the app or a QR code.</p></div></li>
         <li><div><h3>Automatic doors</h3><p>Secure, sensor-controlled, contactless.</p></div></li>
-        <li><div><h3>Scan-and-pay checkout</h3><p>Self-checkout POS with card &amp; BLIK.</p></div></li>
-        <li><div><h3>Relocatable</h3><p>Craned to a new site in under an hour as demand shifts.</p></div></li>
+        <li><div><h3>Scan-and-pay checkout</h3><p>Self-checkout POS with card &amp; BLIK. The AI reconciles every sale.</p></div></li>
+        <li><div><h3>Relocatable, stock and all</h3><p>The whole store, shelves still full, loads onto a small truck and reopens somewhere better in under an hour.</p></div></li>
       </ol>
+    </div>
+  </div>
+</section>
+
+<!-- UNIT SPECS -->
+<section class="section--tight">
+  <div class="wrap reveal">
+    <div class="spec-strip reveal-stagger">
+      <div class="spec"><b>21 m²</b><span>Steel build, fully fitted retail floor</span></div>
+      <div class="spec"><b>3.5 tonnes</b><span>Loads onto a small truck, road-legal</span></div>
+      <div class="spec"><b>Only land needed</b><span>No lease, no build-out, no consent queue</span></div>
+      <div class="spec"><b>Solar optional</b><span>Grid power or panels on the roof</span></div>
+      <div class="spec"><b>Starlink online</b><span>Connected even at remote sites</span></div>
+      <div class="spec"><b>Fridges inside</b><span>Chilled and frozen ranges run as standard</span></div>
     </div>
   </div>
 </section>
@@ -85,15 +103,16 @@
 
 <!-- AI BRAIN / diagram -->
 <section class="section dark">
-  <div class="wrap reveal" style="text-align:center; max-width:60ch; margin-inline:auto">
+  <div class="wrap reveal" style="text-align:center; max-width:48rem; margin-inline:auto">
     <span class="eyebrow" style="justify-content:center">The AI brain</span>
-    <h2 style="font-size:var(--fs-h1)">One model runs every<br>system in the unit.</h2>
-    <p class="lead" style="margin:var(--s3) auto 0; text-align:center; max-width:48ch">Entry, security, inventory and the whole fleet
-       run on one computer-vision system, not a stack of disconnected sensors.</p>
+    <h2 style="font-size:clamp(2.1rem,4.2vw,3.4rem)">One AI is the manager, <br>cashier, guard and <br>marketing team.</h2>
+    <p class="lead" style="margin:var(--s3) auto 0; text-align:center; max-width:52ch">It opens the doors, rings up every basket,
+       watches the floor, adjusts prices, targets promotions to the customers in front of it and reorders stock before shelves
+       run empty. When something needs hands, it dispatches one human assistant with an exact list.</p>
   </div>
   <div class="wrap reveal float-media" style="margin-top:var(--s5)">
-    <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="metadata" style="width:100%;border-radius:8px;border:1px solid var(--line-dark)">
-      <source src="assets/video/diagram-anim.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="metadata" style="width:100%;border-radius:8px;border:1px solid var(--line-dark)" data-mobile-src="assets/video/schematics-720.mp4">
+      <source src="assets/video/schematics.mp4" type="video/mp4">
     </video>
   </div>
 </section>
@@ -103,7 +122,7 @@
   <div class="wrap">
     <div class="tech-intro reveal" style="margin-bottom:var(--s6)">
       <div>
-        <span class="eyebrow">Computer vision</span>
+        <span class="eyebrow">AI-powered vision</span>
         <h2 style="font-size:var(--fs-h1)">Reads movement, never faces.</h2>
       </div>
       <p class="lead">138-point skeletal tracking and behaviour recognition, built in-house
@@ -113,8 +132,8 @@
     <div class="cv-block reveal">
       <div class="cv-block__media">
         <span class="cv-block__tag"><span class="dot"></span> Live · theft detection</span>
-        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-theft-detection.jpg" preload="auto">
-          <source src="assets/video/theft-detection.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-theft-detection.jpg" preload="metadata">
+          <source src="assets/video/stealing.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -132,8 +151,8 @@
     <div class="cv-block cv-block--rev reveal">
       <div class="cv-block__media">
         <span class="cv-block__tag"><span class="dot"></span> Live · fall detection</span>
-        <video autoplay muted loop playsinline data-play-in-view data-clip-start="3" poster="assets/img/poster-fall-detection.jpg" preload="auto">
-          <source src="assets/video/fall-detection.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="assets/img/poster-fall-detection.jpg" preload="metadata">
+          <source src="assets/video/medical-alert.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -161,7 +180,7 @@
       <div class="t"><div class="ic">▚</div><h3>Skeletal tracking</h3><p>138-point body &amp; hand pose, in real time.</p></div>
       <div class="t"><div class="ic">◉</div><h3>Behaviour recognition</h3><p>Flags theft gestures, falls &amp; unsafe events.</p></div>
       <div class="t"><div class="ic">⊘</div><h3>Identity-free design</h3><p>No facial ID. RODO &amp; EU AI Act compliant by architecture.</p></div>
-      <div class="t"><div class="ic">⌁</div><h3>Edge + cloud</h3><p>Low-cost edge inference on commodity cameras.</p></div>
+      <div class="t"><div class="ic">⌁</div><h3>Edge, solar &amp; Starlink</h3><p>Low-cost AI inference on commodity cameras, with optional solar power and Starlink internet keeping even remote units online.</p></div>
     </div>
   </div>
 </section>
@@ -170,23 +189,25 @@
 <section class="section">
   <div class="wrap split split--reverse reveal">
     <div class="split__media float-media">
-      <img src="assets/img/store-scan-enter.jpg" alt="Customer scanning a QR code to enter a Lewiatan SmartNovo unit">
+      <video autoplay muted loop playsinline data-play-in-view poster="assets/img/diagram-cutaway.jpg" preload="metadata" data-mobile-src="assets/video/ai-thinking-720.mp4">
+        <source src="assets/video/ai-thinking.mp4" type="video/mp4">
+      </video>
     </div>
     <div>
       <span class="eyebrow">The platform</span>
-      <h2>Inventory, sales, alerts &amp; fleet in one view.</h2>
-      <p class="lead">Every unit reports into a single management layer. Stock levels, transactions, security and
-         safety alerts and the health of the whole fleet, wherever the units are standing.</p>
+      <h2>The AI manages the business. One dashboard shows you how.</h2>
+      <p class="lead">Every unit reports into a single management layer: sales, stock, best sellers, alerts and what
+         the AI has ordered for each container. One assistant, guided by that dashboard, keeps five stores stocked.</p>
       <ol class="steps">
-        <li><div><h3>Live inventory</h3><p>Vision-driven stock tracking, restock prompts and shrinkage signals.</p></div></li>
-        <li><div><h3>Sales &amp; reconciliation</h3><p>Self-checkout transactions reconciled automatically.</p></div></li>
-        <li><div><h3>Fleet at a glance</h3><p>Uptime, alerts and performance across every deployed unit.</p></div></li>
+        <li><div><h3>AI inventory &amp; ordering</h3><p>The AI tracks stock through vision, flags shrinkage and places orders before shelves run empty.</p></div></li>
+        <li><div><h3>AI pricing &amp; promotions</h3><p>It adjusts prices, picks the offers to run and pushes them to the in-store screens.</p></div></li>
+        <li><div><h3>Analytics &amp; fleet view</h3><p>Best sellers, performance and uptime per unit, and exactly what to deliver where.</p></div></li>
       </ol>
     </div>
   </div>
 </section>
 
-<section class="section dark cta-band dot-panel">
+<section class="section dark cta-band dot-panel" style="background-image:linear-gradient(rgba(10,21,38,.88),rgba(10,21,38,.88)),url(assets/img/store-hospital-day.png); background-size:cover; background-position:center">
   <div class="wrap reveal">
     <span class="eyebrow" style="justify-content:center">See it on your site</span>
     <h2>Bring the technology to your network.</h2>
@@ -204,11 +225,11 @@
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <a class="brand" href="index.html"><span class="w">Smart<em>Novo</em></span></a>
-        <p>The autonomous container store platform. Built in Poland for the EU.</p>
+        <a class="brand" href="index.html"><img class="logo" src="assets/img/logo/wordmark-white.png" alt="SmartNovo"></a>
+        <p>Autonomous store technology. Built in Poland for the EU.</p>
       </div>
       <div class="foot-col"><h4>Platform</h4><ul>
-        <li><a href="product.html">Product &amp; Technology</a></li>
+        <li><a href="product.html">Technology</a></li>
         <li><a href="product.html#cv">Theft &amp; fall detection</a></li>
       </ul></div>
       <div class="foot-col"><h4>Company</h4><ul>

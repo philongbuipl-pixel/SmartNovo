@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmartNovo · Sklep, który działa sam</title>
-<meta name="description" content="SmartNovo to autonomiczna platforma sklepów kontenerowych. Jedna AI obsługuje wejście, bezpieczeństwo, zapasy i kasę, bez personelu, przenośna w godzinę. Zbudowane w Polsce dla UE.">
+<title>SmartNovo · Sklep, którym zarządza AI</title>
+<meta name="description" content="SmartNovo tworzy autonomiczną technologię sklepową. Jedna AI jest kierownikiem, kasjerem, ochroniarzem i działem marketingu sklepu 21 m², który przenosi się w niecałą godzinę. Zbudowane w Polsce dla UE.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
 <header class="site-header" id="siteHeader">
   <div class="wrap nav">
     <a class="brand" href="index.html" aria-label="SmartNovo — strona główna">
-      <span class="w">Smart<em>Novo</em></span>
+      <img class="logo logo--ink" src="../assets/img/logo/wordmark-ink.png" alt="SmartNovo">
+      <img class="logo logo--white" src="../assets/img/logo/wordmark-white.png" alt="SmartNovo">
     </a>
     <nav aria-label="Główna">
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" aria-current="page">Start</a></li>
-        <li><a href="product.html">Produkt i technologia</a></li>
+        <li><a href="product.html">Technologia</a></li>
         <li><a href="partners.html">Partnerzy</a></li>
         <li><a href="contact.html">Kontakt</a></li>
       </ul>
@@ -42,16 +43,15 @@
 <!-- HERO -->
 <section class="hero">
   <video class="hero__video" autoplay muted loop playsinline
-         poster="../assets/img/poster-cv-eye.jpg" preload="metadata">
-    <source src="../assets/video/cv-eye.mp4" type="video/mp4">
+         poster="../assets/img/unit-render.jpg" preload="metadata" data-mobile-src="../assets/video/hero-main-720.mp4">
+    <source src="../assets/video/hero-main.mp4" type="video/mp4">
   </video>
   <div class="hero__scrim"></div>
   <span class="hero__dots" aria-hidden="true"></span>
   <div class="wrap hero__inner">
-    <span class="eyebrow">Autonomiczna platforma sklepowa</span>
-    <h1><span class="word">Sklep,</span> <span class="word">który</span> <span class="word">działa</span> <span class="word">sam<span style="color:var(--teal)">.</span></span></h1>
-    <p class="lead">Jedna AI obsługuje wejście, bezpieczeństwo, zapasy i kasę. Bez personelu. Jednostka 21&nbsp;m²,
-       postawiona dźwigiem i handlująca w niecałą godzinę, pod dowolną marką.</p>
+    <h1><span class="word">Sklep,</span> <span class="word">którym</span> <span class="word">zarządza</span> <span class="word">AI<span style="color:var(--teal)">.</span></span></h1>
+    <p class="lead">Jedna AI jest kierownikiem, kasjerem, ochroniarzem i działem marketingu. Klient skanuje, robi
+       zakupy i wychodzi. Sklep 21&nbsp;m², postawiony dźwigiem i handlujący w niecałą godzinę, pod dowolną marką.</p>
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="contact.html">Wdróż z nami <span class="arr">→</span></a>
       <a class="btn btn--ghost btn--lg" href="#how">Zobacz, jak to działa</a>
@@ -64,7 +64,7 @@
   <div class="wrap whynow__grid">
     <div class="reveal">
       <span class="eyebrow">Dlaczego teraz</span>
-      <h2 style="font-size:var(--fs-h1); max-width:16ch">Sklep z obsługą przestał się spinać.</h2>
+      <h2 style="font-size:clamp(2.1rem,4.2vw,3.4rem)">Sklep z obsługą <br>przestał się spinać.</h2>
       <p class="lead" style="margin-top:var(--s3)">Tysiące stacji paliw, kampusów, szpitali i małych miejscowości ma realny
          popyt. Ale jeden pracownik na każdej zmianie zatapia wynik, zanim zeskanujemy pierwszy koszyk, więc SmartNovo usuwa
          pozycje, które łamią model.</p>
@@ -76,12 +76,12 @@
         <div class="whynow__card"><div class="big"><span data-count="2" data-suffix="%">2%</span></div>
           <div><h3>Kradzieże wciąż rosną</h3><p>Straty to 1,5 do 2% europejskiej sprzedaży detalicznej, a małe sklepy rzadko mają ochronę w czasie rzeczywistym.</p></div></div>
         <div class="whynow__card"><div class="big">6 mies.</div>
-          <div><h3>Wolne, kosztowne otwarcie</h3><p>Tradycyjne wykończenie to najem, budowa i pozwolenia. To miesiące i sześciocyfrowy koszt, zanim zaczniesz handel.</p></div></div>
+          <div><h3>Wolne otwarcie, drogie wyjście</h3><p>Tradycyjne wykończenie to najem, budowa i pozwolenia: miesiące i sześciocyfrowy koszt, zanim zaczniesz handel. I wszystko utopione w lokalu. Gdy lokalizacja przestaje działać, właściciel odchodzi, a wykończenie zostaje.</p></div></div>
       </div>
     </div>
     <div class="whynow__media float-media" style="background-image:url(../assets/img/store-crane-delivery.jpg)">
       <video autoplay muted loop playsinline data-play-in-view data-clip-start="0" data-clip-end="3"
-             poster="../assets/img/store-crane-delivery.jpg" preload="auto">
+             poster="../assets/img/store-crane-delivery.jpg" preload="metadata">
         <source src="../assets/video/crane-lift.mp4" type="video/mp4">
       </video>
     </div>
@@ -95,16 +95,18 @@
       <div>
         <span class="eyebrow">Jeden mózg, jedna jednostka</span>
         <h2 style="font-size:var(--fs-h1)">Jedna AI prowadzi cały sklep.</h2>
-        <p class="lead">Ta sama wizja komputerowa, która zatrzymuje kradzieże, śledzi też zapasy, otwiera drzwi,
-           rejestruje klientów i wykrywa upadki. Jeden mózg, jednostka 21&nbsp;m² i zero personelu. Postawiona dźwigiem
-           i handlująca w niecałą godzinę.</p>
+        <p class="lead">Jest kierownikiem, kasjerem, ochroniarzem i działem marketingu w jednym systemie. Otwiera
+           drzwi, śledzi każdy produkt w czasie rzeczywistym, wykrywa kradzieże i upadki oraz sama decyduje, jakie
+           promocje uruchomić. Gdy zapasy się kończą, składa zamówienie i wysyła asystenta, żeby uzupełnił dokładnie
+           to, o co prosi.</p>
+        <p class="lead" style="margin-top:var(--s3); color:var(--paper)">Ludzie nie prowadzą tego sklepu. Pracują dla niego.</p>
         <div class="hero__cta" style="margin-top:var(--s4)">
           <a class="btn btn--primary" href="product.html">Poznaj technologię <span class="arr">→</span></a>
         </div>
       </div>
       <div class="split__media float-media">
-        <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/diagram-cutaway.jpg" preload="auto">
-          <source src="../assets/video/diagram-anim.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/diagram-cutaway.jpg" preload="metadata" data-mobile-src="../assets/video/schematics-720.mp4">
+          <source src="../assets/video/schematics.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -123,13 +125,26 @@
         <span class="k">Ochrona</span><h3>Wykrywanie upadków</h3><p>Rozpoznaje upadek osoby i wysyła alert medyczny. Opieka bez personelu.</p></div>
       <div class="node lift">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
-        <span class="k">Zapasy</span><h3>Zapasy na żywo</h3><p>Stany magazynowe oparte na wizji, podpowiedzi uzupełnień i sygnały strat.</p></div>
+        <span class="k">Zapasy</span><h3>Zapasy i zamówienia</h3><p>AI śledzi każdy produkt w czasie rzeczywistym i składa zamówienie, zanim półki się opróżnią.</p></div>
       <div class="node lift">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></span>
         <span class="k">Kasa</span><h3>Skanuj i płać</h3><p>Kasa samoobsługowa z kartą i BLIK-iem. Jednostka rozlicza się sama.</p></div>
       <div class="node lift">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.2"/><rect x="14" y="3" width="7" height="5" rx="1.2"/><rect x="14" y="12" width="7" height="9" rx="1.2"/><rect x="3" y="16" width="7" height="5" rx="1.2"/></svg></span>
-        <span class="k">Flota</span><h3>Jeden panel</h3><p>Zapasy, sprzedaż, alerty i cała flota w jednym widoku.</p></div>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 0 1-5.8-1.6"/><path d="M17 8.5a4 4 0 0 1 0 5"/></svg></span>
+        <span class="k">Marketing</span><h3>Promocje wybiera AI</h3><p>AI decyduje, jakie oferty uruchomić i kiedy, i wyświetla je na ekranach w sklepie.</p></div>
+    </div>
+
+    <div class="ai-facts reveal-stagger">
+      <div class="f"><b>1 osoba, 5 sklepów</b><span>Jeden asystent obsługuje pięć kontenerów. AI mówi mu, co przywieźć i dokąd.</span></div>
+      <div class="f"><b>Jeden panel</b><span>Sprzedaż, stany, bestsellery i zamówienia dla każdej jednostki, w jednym widoku AI.</span></div>
+      <div class="f"><b>Przenosiny w niecałą godzinę</b><span>Cały sklep, z towarem na półkach, wjeżdża na małą ciężarówkę i otwiera się w lepszym miejscu.</span></div>
+      <div class="f"><b>Działa wszędzie</b><span>Opcjonalne panele słoneczne i internet Starlink, więc odległe lokalizacje nie są przeszkodą.</span></div>
+    </div>
+
+    <div class="team-photo float-media reveal" style="margin-top:var(--s5)">
+      <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/diagram-cutaway.jpg" preload="metadata" style="width:100%; display:block" data-mobile-src="../assets/video/ai-thinking-720.mp4">
+        <source src="../assets/video/ai-thinking.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -140,7 +155,7 @@
     <div class="tech-intro reveal" style="margin-bottom:var(--s6)">
       <div>
         <span class="eyebrow">Technologia</span>
-        <h2 style="font-size:var(--fs-h1)">Wizja, która czyta ruch, nigdy twarze.</h2>
+        <h2 style="font-size:var(--fs-h1)">Wizja napędzana AI, która czyta ruch.</h2>
       </div>
       <p class="lead">Śledzenie szkieletowe w 138 punktach i rozpoznawanie zachowań, budowane u nas przez
          cztery lata i działające na zwykłych kamerach na brzegu sieci.</p>
@@ -150,8 +165,8 @@
     <div class="cv-block reveal">
       <div class="cv-block__media float-media" style="background-image:url(../assets/img/poster-theft-detection.jpg)">
         <span class="cv-block__tag"><span class="dot"></span> Na żywo · wykrywanie kradzieży</span>
-        <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-theft-detection.jpg" preload="auto">
-          <source src="../assets/video/theft-detection.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-theft-detection.jpg" preload="metadata">
+          <source src="../assets/video/stealing.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -170,8 +185,8 @@
     <div class="cv-block cv-block--rev reveal" style="margin-top:var(--s8)">
       <div class="cv-block__media float-media" style="background-image:url(../assets/img/poster-fall-detection.jpg)">
         <span class="cv-block__tag"><span class="dot"></span> Na żywo · wykrywanie upadków</span>
-        <video autoplay muted loop playsinline data-play-in-view data-clip-start="3" poster="../assets/img/poster-fall-detection.jpg" preload="auto">
-          <source src="../assets/video/fall-detection.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-fall-detection.jpg" preload="metadata">
+          <source src="../assets/video/medical-alert.mp4" type="video/mp4">
         </video>
       </div>
       <div>
@@ -188,68 +203,50 @@
   </div>
 </section>
 
-<!-- TRAKCJA -->
-<section class="section traction reveal">
-  <div class="wrap">
-    <div class="tech-intro" style="margin-bottom:var(--s5)">
-      <div>
-        <span class="eyebrow">Trakcja</span>
-        <h2 style="font-size:var(--fs-h1)">Już handluje. To nie koncept.</h2>
-      </div>
-      <p class="lead">Jednostki pod marką Lewiatan działają dziś w Polsce. To pierwsze 90 dni na trzech jednostkach,
-         z podpisanym zamówieniem na pięć kolejnych od partnera kotwiczącego.</p>
-    </div>
-    <div class="metric-grid reveal-stagger">
-      <div class="metric"><div class="m-num">3</div><div class="m-lbl">jednostki działające i w testach</div></div>
-      <div class="metric"><div class="m-num">+5</div><div class="m-lbl">na podpisanym zamówieniu od partnera</div></div>
-      <div class="metric"><div class="m-num">~1 200</div><div class="m-lbl">zarejestrowanych klientów w 90 dni</div></div>
-      <div class="metric"><div class="m-num">~27 tys.</div><div class="m-lbl">przetworzonych transakcji</div></div>
-      <div class="metric"><div class="m-num">99%</div><div class="m-lbl">dostępności w pierwszych 90 dniach</div></div>
-      <div class="metric"><div class="m-num">1 800 PLN</div><div class="m-lbl">średni przychód na jednostkę dziennie</div></div>
-      <div class="metric"><div class="m-num">18 PLN</div><div class="m-lbl">średni koszyk</div></div>
-      <div class="metric"><div class="m-num">4 lata</div><div class="m-lbl">własnego R&amp;D za technologią wizji</div></div>
-    </div>
-    <p class="foot-note">Zakotwiczeni w Lewiatanie, z naszym CEO w zarządzie sieci, i chronieni wzorem wspólnotowym UE&nbsp;#015135640.</p>
-  </div>
-</section>
-
 <!-- KAŻDA MARKA, KAŻDA LOKALIZACJA -->
 <section class="section">
   <div class="wrap reveal" style="text-align:center; margin-inline:auto">
     <span class="eyebrow" style="justify-content:center">Jedna platforma, każda marka</span>
-    <h2 style="font-size:var(--fs-h1)">Twoja marka. Każda lokalizacja.<br>Postawiona wszędzie.</h2>
+    <h2 style="font-size:var(--fs-h1)">Twoja marka. Każda lokalizacja. <br>Postawiona wszędzie.</h2>
   </div>
   <div class="wrap reveal-stagger ind-grid" style="margin-top:var(--s5)">
     <article class="ind-card lift" style="min-height:340px">
       <img src="../assets/img/store-hospital-day.png" alt="Jednostka SmartNovo Lewiatan na kampusie szpitalnym">
-      <div class="body"><span class="k">Ochrona zdrowia</span><h3>Kampusy szpitalne</h3></div>
+      <div class="body"><span class="k">Kampusy biurowe</span><h3>Artykuły spożywcze</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-pharmacy.jpg" preload="metadata">
         <source src="../assets/video/pharmacy.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Apteka</span><h3>PharmaNow</h3></div>
+      <div class="body"><span class="k">Szpitale i kliniki</span><h3>Apteka</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <img src="../assets/img/store-beach-waveshop.jpg" alt="Sezonowa jednostka WaveShop na promenadzie">
-      <div class="body"><span class="k">Plaża i kurort</span><h3>WaveShop</h3></div>
+      <div class="body"><span class="k">Plaża i kurort</span><h3>Stroje kąpielowe i ochrona UV</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-entering-uni.jpg" preload="metadata">
         <source src="../assets/video/entering-uni.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Kampus</span><h3>Uni Store</h3></div>
+      <div class="body"><span class="k">Kampus uczelni</span><h3>Odzież i gadżety</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
       <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/poster-hero-reststop.jpg" preload="metadata">
         <source src="../assets/video/rest-stop.mp4" type="video/mp4"></video>
-      <div class="body"><span class="k">Autostrada</span><h3>Stacje i MOP-y</h3></div>
+      <div class="body"><span class="k">Autostrady i stacje</span><h3>Convenience 24/7</h3></div>
     </article>
     <article class="ind-card lift" style="min-height:340px">
-      <img src="../assets/img/store-scan-enter.jpg" alt="Klient skanuje, by wejść do jednostki convenience SmartNovo">
-      <div class="body"><span class="k">Convenience</span><h3>Główna ulica</h3></div>
+      <img src="../assets/img/store-papermind.jpg" alt="Jednostka PaperMind z artykułami szkolnymi przy szkole">
+      <div class="body"><span class="k">Szkoły</span><h3>Książki i artykuły piśmienne</h3></div>
     </article>
   </div>
   <p class="lead reveal" style="text-align:center; margin:var(--s4) auto 0">Convenience, apteka, kampus, stacja paliw
      czy kurort. Jednostka jest ta sama, a marka jest Twoja.</p>
+  <div class="wrap reveal" style="margin-top:var(--s5)">
+    <div class="team-photo float-media">
+      <video autoplay muted loop playsinline data-play-in-view poster="../assets/img/unit-render.jpg" preload="metadata" style="width:100%; display:block">
+        <source src="../assets/video/brand-reel.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </section>
 
 <!-- PARTNERZY -->
@@ -294,7 +291,15 @@
       </details>
       <details class="faq-item">
         <summary>Czy może działać pod naszą marką?</summary>
-        <div class="faq-a">Tak. Jednostka 21 m² pod spodem jest ta sama, a marka na zewnątrz jest Twoja. Convenience, apteka, kampus, stacja czy kurort.</div>
+        <div class="faq-a">Tak. Jednostka 21 m² pod spodem jest ta sama, a zewnątrz w pełni personalizujemy Twoim projektem i oklejeniem. Ekrany w sklepie wyświetlają Twoje promocje i reklamy. Convenience, apteka, kampus, stacja czy kurort.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Ilu ludzi potrzeba do obsługi?</summary>
+        <div class="faq-a">Jednego. Jeden asystent obsługuje do pięciu kontenerów, a panel AI mówi mu dokładnie, co przywieźć i do którego sklepu. Całą resztę, od kasy po zamówienia, AI robi sama.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Czego wymaga lokalizacja?</summary>
+        <div class="faq-a">Tylko gruntu. Jednostka podłącza się do sieci albo działa na opcjonalnych panelach słonecznych, internet zapewnia Starlink, a w środku działają lodówki i zamrażarki, więc sprawdzają się nawet odległe miejsca.</div>
       </details>
       <details class="faq-item">
         <summary>Czy można licencjonować samą wizję, bez kontenera?</summary>
@@ -302,7 +307,7 @@
       </details>
       <details class="faq-item">
         <summary>Czy jednostkę można później przenieść?</summary>
-        <div class="faq-a">Tak. Jednostka przenosi się na nową lokalizację w niecałą godzinę, gdy zmienia się popyt, więc słaba lokalizacja nigdy nie jest utopionym kapitałem.</div>
+        <div class="faq-a">Tak. Stalowa jednostka waży około 3,5 tony, więc wjeżdża na małą ciężarówkę i może jechać po drogach, z towarem wciąż na półkach. Gdy lokalizacja nie działa, sklep otwiera się w lepszym miejscu w niecałą godzinę. Nigdy nie tracisz sklepu.</div>
       </details>
     </div>
   </div>
@@ -328,11 +333,11 @@
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <a class="brand" href="index.html"><span class="w">Smart<em>Novo</em></span></a>
-        <p style="margin-top:var(--s2)">Autonomiczna platforma sklepów kontenerowych. Zbudowane w Polsce dla UE.</p>
+        <a class="brand" href="index.html"><img class="logo" src="../assets/img/logo/wordmark-white.png" alt="SmartNovo"></a>
+        <p style="margin-top:var(--s2)">Autonomiczna technologia sklepowa. Zbudowane w Polsce dla UE.</p>
       </div>
       <div class="foot-col"><h4>Platforma</h4><ul>
-        <li><a href="product.html">Produkt i technologia</a></li>
+        <li><a href="product.html">Technologia</a></li>
         <li><a href="product.html#cv">Wykrywanie kradzieży i upadków</a></li>
         <li><a href="index.html#how">Jak to działa</a></li>
       </ul></div>

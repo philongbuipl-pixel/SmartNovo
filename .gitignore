@@ -3,3 +3,7 @@
 
 # Local preview / dev helpers (machine-specific)
 .claude/
+
+# Raw source media (compressed copies live in assets/)
+additional new videos and photos/
+Gemini_Generated_Image_*.png

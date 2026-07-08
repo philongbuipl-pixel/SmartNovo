@@ -594,8 +594,11 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
   box-shadow:0 2px 22px -14px rgba(15,30,61,.28); }
 .site-header.solid::before{ opacity:0; }
 
-/* ---- Hero legibility without boxes: stronger scrim + soft text shadow ---- */
-.hero__scrim{ background:linear-gradient(to bottom, rgba(6,14,26,.55) 0%, rgba(6,14,26,.22) 38%, rgba(6,14,26,.8) 100%); }
+/* ---- Hero legibility: a flat translucent darkening layer over the video,
+   plus the vertical gradient, so the headline always reads ---- */
+.hero__scrim{ background:
+  linear-gradient(rgba(6,14,26,.34), rgba(6,14,26,.34)),
+  linear-gradient(to bottom, rgba(6,14,26,.55) 0%, rgba(6,14,26,.22) 38%, rgba(6,14,26,.8) 100%); }
 .hero h1{ text-shadow:0 2px 40px rgba(0,0,0,.45); }
 .hero .lead{ text-shadow:0 1px 22px rgba(0,0,0,.55); }
 .hero .eyebrow{ text-shadow:0 1px 12px rgba(0,0,0,.5); }
@@ -752,13 +755,12 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
 
 /* =========================  MOBILE / TABLET  ============================= */
 @media (max-width:900px){
-  .nav{ height:64px; }
   .nav-cta{ gap:var(--s2); }
   .lang-switch a{ padding:6px 7px; }
-  /* the fixed mobile dropdown sits just under the shorter bar and is fully
+  /* the fixed mobile dropdown sits just under the bar and is fully
      hidden off-screen when closed (no white sliver peeking under the now-
      transparent header) */
-  .nav-links{ inset:68px 0 auto 0; transform:translateY(calc(-100% - 80px)); }
+  .nav-links{ inset:76px 0 auto 0; transform:translateY(calc(-100% - 90px)); }
   .nav-links.open{ transform:translateY(0); }
   /* the dropdown panel is always light, so its links must stay dark even while
      the header is in its transparent (over-hero) state */
@@ -770,6 +772,8 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
 
 @media (max-width:600px){
   :root{ --fs-display:clamp(2.6rem,12vw,3.6rem); --fs-h1:clamp(2.1rem,8.5vw,3rem); }
+  /* manual heading breaks are tuned for desktop; on phones let text flow */
+  h1 br,h2 br{ display:none; }
   .section{ padding-block:clamp(48px,12vw,72px); }
   .section--tight{ padding-block:clamp(40px,10vw,60px); }
   .hero__inner{ padding-bottom:0; }
@@ -784,7 +788,7 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
   .metric{ padding:var(--s3); }
   /* partner logos: exactly two per row to showcase them */
   .partner-logos{ gap:var(--s2); }
-  .partner-logos .logo-tile{ width:calc(50% - 8px); max-width:none; height:104px; padding:12px 14px; }
+  .partner-logos .logo-tile{ width:calc(50% - 9px); max-width:none; height:104px; padding:12px 14px; }
   .partner-logos .logo-tile img{ max-height:60px; }
   .partner-grid .p .p-logo{ height:80px; }
   .partner-grid .p .p-logo img{ max-height:72px; }
@@ -798,4 +802,71 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
 @media (hover:none){
   .btn,.nav-links a,.faq-item summary,.lang-switch a{ -webkit-tap-highlight-color:transparent; }
   .faq-item summary{ padding-block:var(--s3); }
+}
+
+/* =========================================================================
+   v9 — OFFICIAL BRAND LOGO, SQUARE BRAND MARK (no animated line),
+   AI-FACT STRIP, UNIT SPEC STRIP, SELL-LINES, TEAM PHOTO
+   ========================================================================= */
+
+/* ---- Official wordmark images; white over the hero, ink on white ---- */
+.brand .logo{ height:72px; width:auto; display:block; }
+.brand .logo--white{ display:none; }
+.site-header:not(.solid) .brand .logo--ink{ display:none; }
+.site-header:not(.solid) .brand .logo--white{ display:block; }
+.site-header .nav{ height:96px; }
+.site-footer .brand .logo{ height:26px; }
+@media (max-width:900px){ .site-header .nav{ height:72px; } .brand .logo{ height:52px; } }
+@media (max-width:600px){ .brand .logo{ height:44px; } .site-footer .brand .logo{ height:22px; } }
+
+/* ---- Eyebrow: the animated line read as template filler. Replaced with the
+   brand's square period, small and still. ---- */
+.eyebrow{ gap:9px; }
+.eyebrow::before{ width:7px; height:7px; border-radius:1.5px; background:var(--teal);
+  animation:none !important; }
+
+/* ---- Fact strip inside the One Brain section (dark) ---- */
+.ai-facts{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-dark);
+  border:1px solid var(--line-dark); border-radius:var(--radius); overflow:hidden; margin-top:var(--s6); }
+.ai-facts .f{ background:rgba(255,255,255,.03); padding:var(--s3) var(--s3);
+  transition:background .3s var(--ease); }
+.ai-facts .f:hover{ background:rgba(255,255,255,.06); }
+.ai-facts .f b{ display:block; font-family:var(--display); font-weight:600; font-size:1.1rem;
+  color:var(--paper); margin-bottom:5px; letter-spacing:-.01em; }
+.ai-facts .f span{ font-size:var(--fs-sm); color:var(--muted-on-dark); line-height:1.45; display:block; }
+@media (max-width:860px){ .ai-facts{ grid-template-columns:1fr 1fr; } }
+
+/* ---- Unit spec strip (light, product page) ---- */
+.spec-strip{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--line);
+  border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; }
+.spec-strip .spec{ background:#fff; padding:var(--s3); transition:background .3s var(--ease); }
+.spec-strip .spec:hover{ background:var(--paper-2); }
+.spec-strip .spec b{ display:block; font-family:var(--display); font-weight:600; font-size:1.02rem;
+  color:var(--ink); margin-bottom:4px; }
+.spec-strip .spec span{ font-size:var(--fs-xs); color:var(--muted); line-height:1.45; display:block; }
+@media (max-width:900px){ .spec-strip{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:540px){ .spec-strip{ grid-template-columns:1fr 1fr; } }
+
+/* ---- Sell-line under each location card title ---- */
+.ind-card .body p{ font-size:var(--fs-sm); color:#c9d2e2; margin-top:5px; }
+
+/* ---- Contact form fields must never exceed their column (a long <select>
+   option was stretching the whole page sideways on phones) ---- */
+.contact{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+.field input,.field select,.field textarea{ width:100%; min-width:0; max-width:100%; }
+@media (max-width:820px){ .contact{ grid-template-columns:minmax(0,1fr); } }
+
+/* ---- Team photo block on Partners ---- */
+.team-photo{ border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); }
+.team-photo img{ width:100%; display:block; }
+.team-note{ font-size:var(--fs-sm); color:var(--muted); margin-top:var(--s2); }
+
+/* ---- FINAL mobile partner-tile sizing (last in source so it always wins):
+   exactly two logos per row on phones ---- */
+@media (max-width:600px){
+  .partner-logos{ gap:12px; }
+  .partner-logos .logo-tile{ width:calc(50% - 6px); max-width:calc(50% - 6px);
+    height:100px; padding:12px; }
+  .partner-logos .logo-tile img{ max-height:56px; }
+  .partner-logos .logo-tile .txt{ font-size:1.3rem; }
 }

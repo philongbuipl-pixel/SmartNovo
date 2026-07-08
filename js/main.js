@@ -1,6 +1,14 @@
 (function () {
   'use strict';
 
+  /* Phones get lighter 720p renditions of the heavy videos */
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.querySelectorAll('video[data-mobile-src]').forEach(function (v) {
+      var s = v.querySelector('source');
+      if (s) { s.setAttribute('src', v.getAttribute('data-mobile-src')); v.load(); }
+    });
+  }
+
   /* Mobile nav */
   var burger = document.querySelector('.burger');
   var links = document.querySelector('.nav-links');
