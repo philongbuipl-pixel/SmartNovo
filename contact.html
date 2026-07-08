@@ -41,9 +41,17 @@
 
 <section class="section dark dot-edge contact-hero" style="padding-block:calc(var(--s8) + 40px) var(--s6); background-image:url(assets/img/store-street-night.png); background-size:cover; background-position:center">
   <div class="wrap reveal in" style="position:relative;z-index:2">
-    <span class="eyebrow">Contact</span>
     <h1 style="font-size:var(--fs-h1);max-width:18ch;margin-top:var(--s2)">Let's put a unit on your site.</h1>
     <p class="lead" style="margin-top:var(--s3)">Tell us the location and the brand. We'll come back with a plan to get a unit trading, typically in weeks, not quarters.</p>
+  </div>
+</section>
+<section class="section--tight">
+  <div class="wrap reveal">
+    <div class="team-photo" style="max-width:960px; margin-inline:auto">
+      <video controls playsinline poster="assets/img/unit-render.jpg" preload="none" data-mobile-src="assets/video/smartnovo-ad-720.mp4" style="width:100%; display:block">
+        <source src="assets/video/smartnovo-ad.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 </section>
 <section class="section white" id="form">
@@ -95,11 +103,11 @@
         </div>
         <div>
           <dt>Where we are</dt>
-          <dd>Warsaw, Poland 🇵🇱 <br>Built in Poland for the EU.</dd>
+          <dd>Built in Poland for the EU.</dd>
         </div>
         <div>
           <dt>Email</dt>
-          <dd><a href="mailto:hello@smartnovo.io" style="color:var(--teal-dim); font-weight:600">hello@smartnovo.io</a></dd>
+          <dd><a href="mailto:kontakt@tgroupe.pl" style="color:var(--teal-dim); font-weight:600">kontakt@tgroupe.pl</a></dd>
         </div>
       </dl>
     </aside>
@@ -132,27 +140,35 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 SmartNovo. All rights reserved.</span>
-      <span>Warsaw, Poland 🇵🇱 · Built for the EU</span>
+      <span>Built for the EU</span>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
 <script>
-  // Demo-only submit handler. Replace with your real endpoint (Formspree, etc.).
+  // Routes each enquiry to kontakt@tgroupe.pl by opening a pre-filled email.
   var f = document.getElementById('contactForm');
   if (f) f.addEventListener('submit', function (e) {
     e.preventDefault();
     var note = document.getElementById('formNote');
-    var email = document.getElementById('email');
-    var name = document.getElementById('name');
-    if (!name.value.trim() || !email.value.trim() || !/.+@.+\..+/.test(email.value)) {
+    var val = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+    var name = val('name'), email = val('email');
+    if (!name || !email || !/.+@.+\..+/.test(email)) {
       note.textContent = 'Please add your name and a valid email.';
       note.style.color = '#c2453a'; return;
     }
-    note.textContent = 'Thanks. This is a demo form. Connect it to your handler to receive enquiries.';
+    var body =
+      'Name: ' + name + '\n' +
+      'Company / brand: ' + val('company') + '\n' +
+      'Work email: ' + email + '\n' +
+      'Interested in: ' + val('interest') + '\n\n' +
+      'The site & the brand:\n' + val('message') + '\n';
+    window.location.href = 'mailto:kontakt@tgroupe.pl'
+      + '?subject=' + encodeURIComponent('SmartNovo enquiry — ' + name)
+      + '&body=' + encodeURIComponent(body);
+    note.textContent = 'Opening your email app to send this to kontakt@tgroupe.pl…';
     note.style.color = 'var(--teal-dim)';
-    f.reset();
   });
 </script>
 </body>
