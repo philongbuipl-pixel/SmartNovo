@@ -105,7 +105,7 @@
         </div>
         <div>
           <dt>E-mail</dt>
-          <dd><a href="mailto:kontakt@tgroupe.pl" style="color:var(--teal-dim); font-weight:600">kontakt@tgroupe.pl</a></dd>
+          <dd><a href="mailto:info@smartnovo.ai" style="color:var(--teal-dim); font-weight:600">info@smartnovo.ai</a></dd>
         </div>
       </dl>
     </aside>
@@ -145,7 +145,7 @@
 
 <script src="../js/main.js"></script>
 <script>
-  // Kieruje każde zapytanie na kontakt@tgroupe.pl, otwierając gotowy e-mail.
+  // Kieruje każde zapytanie na info@smartnovo.ai, otwierając gotowy e-mail.
   var f = document.getElementById('contactForm');
   if (f) f.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -162,10 +162,10 @@
       'Służbowy e-mail: ' + email + '\n' +
       'Interesuje mnie: ' + val('interest') + '\n\n' +
       'Lokalizacja i marka:\n' + val('message') + '\n';
-    window.location.href = 'mailto:kontakt@tgroupe.pl'
+    window.location.href = 'mailto:info@smartnovo.ai'
       + '?subject=' + encodeURIComponent('Zapytanie SmartNovo — ' + name)
       + '&body=' + encodeURIComponent(body);
-    note.textContent = 'Otwieram Twój program pocztowy, aby wysłać wiadomość na kontakt@tgroupe.pl…';
+    note.textContent = 'Otwieram Twój program pocztowy, aby wysłać wiadomość na info@smartnovo.ai…';
     note.style.color = 'var(--teal-dim)';
   });
 </script>

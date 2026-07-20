@@ -107,7 +107,7 @@
         </div>
         <div>
           <dt>Email</dt>
-          <dd><a href="mailto:kontakt@tgroupe.pl" style="color:var(--teal-dim); font-weight:600">kontakt@tgroupe.pl</a></dd>
+          <dd><a href="mailto:info@smartnovo.ai" style="color:var(--teal-dim); font-weight:600">info@smartnovo.ai</a></dd>
         </div>
       </dl>
     </aside>
@@ -147,7 +147,7 @@
 
 <script src="js/main.js"></script>
 <script>
-  // Routes each enquiry to kontakt@tgroupe.pl by opening a pre-filled email.
+  // Routes each enquiry to info@smartnovo.ai by opening a pre-filled email.
   var f = document.getElementById('contactForm');
   if (f) f.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -164,10 +164,10 @@
       'Work email: ' + email + '\n' +
       'Interested in: ' + val('interest') + '\n\n' +
       'The site & the brand:\n' + val('message') + '\n';
-    window.location.href = 'mailto:kontakt@tgroupe.pl'
+    window.location.href = 'mailto:info@smartnovo.ai'
       + '?subject=' + encodeURIComponent('SmartNovo enquiry — ' + name)
       + '&body=' + encodeURIComponent(body);
-    note.textContent = 'Opening your email app to send this to kontakt@tgroupe.pl…';
+    note.textContent = 'Opening your email app to send this to info@smartnovo.ai…';
     note.style.color = 'var(--teal-dim)';
   });
 </script>
