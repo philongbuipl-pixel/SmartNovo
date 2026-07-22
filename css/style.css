@@ -913,3 +913,19 @@ h1,h2{ font-family:var(--display); font-weight:600; letter-spacing:-.02em; }
 /* Partner cards are logo + name only */
 .partner-grid .p{ display:flex; flex-direction:column; align-items:flex-start; }
 .partner-grid .p h3{ margin:0; }
+
+/* =========================================================================
+   v11 — PARTNER WALL: 4 tiles on the first row, 3 on the second (desktop)
+   ========================================================================= */
+.partner-logos{ max-width:none; gap:24px; }
+.partner-logos .logo-tile{ width:288px; max-width:46vw; height:200px; padding:24px; }
+.partner-logos .logo-tile img{ max-height:150px; max-width:100%; }
+@media (max-width:1180px){
+  .partner-logos{ max-width:640px; margin-inline:auto; }
+  .partner-logos .logo-tile{ width:296px; }
+}
+@media (max-width:600px){
+  .partner-logos{ max-width:none; gap:12px; }
+  .partner-logos .logo-tile{ width:calc(50% - 6px); max-width:calc(50% - 6px); height:150px; padding:16px; }
+  .partner-logos .logo-tile img{ max-height:100px; }
+}
